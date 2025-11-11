@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ASHOK BHATTARAI — Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Portfolio of Ashok Bhattarai — Computer Engineer. Projects, skills, education and contact." />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-grid">
+      <div>
+        <h1 class="name">ASHOK BHATTARAI</h1>
+        <p class="title">Computer Engineer</p>
+      </div>
+      <nav class="contact">
+        <a href="mailto:ashokbhattarai53@gmail.com" aria-label="Email">✉️ ashokbhattarai53@gmail.com</a>
+        <a href="tel:+9779866856705" aria-label="Phone">📞 9866856705</a>
+        <span>📍 9 Lalitpur, Kusunti</span>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about" class="card">
+      <h2>About Me</h2>
+      <p>
+        Computer engineer with a passion for project work and problem solving. Experienced working in teams to deliver high-quality outcomes. Always eager to learn new technologies and improve continuously.
+      </p>
+      <ul class="meta">
+        <li><strong>Date of birth:</strong> 1998-06-01</li>
+        <li><strong>Gender:</strong> Male</li>
+      </ul>
+    </section>
+
+    <section id="skills" class="card two-col">
+      <div>
+        <h2>Technical Skills</h2>
+        <ul>
+          <li>HTML / CSS</li>
+          <li>React.js</li>
+          <li>SQL</li>
+          <li>Data Mining</li>
+          <li>Python (used in model training, Jupyter)</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Soft Skills</h2>
+        <ul>
+          <li>Decision Making</li>
+          <li>Multi-tasking</li>
+          <li>Communication</li>
+          <li>Team Collaboration</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects" class="card">
+      <h2>Project Experience</h2>
+
+      <article class="project">
+        <h3>Intrusion Detection System in Network (Major Group Project)</h3>
+        <p>
+          A system for detecting anomalies in network traffic. Tech: React.js, Tshark, Python, Jupyter. I was involved in model training and data processing.
+        </p>
+      </article>
+
+      <article class="project">
+        <h3>Yogfit (Minor Group Project)</h3>
+        <p>
+          E-commerce web app for yoga wear. Tech: .NET, C#, SQL, HTML/CSS. I contributed to frontend development.
+        </p>
+      </article>
+
+      <article class="project">
+        <h3>Event Management System (Minor Group Project)</h3>
+        <p>
+          Web application for event booking and management. Tech: .NET, C#, HTML/CSS. I worked on frontend development.
+        </p>
+      </article>
+    </section>
+
+    <section id="education" class="card">
+      <h2>Education</h2>
+
+      <div class="edu">
+        <h3>Bachelor of Engineering (Computer Engineering)</h3>
+        <p>Cosmos College Of Management And Technology — Pokhara University (2018–2023)</p>
+        <ul>
+          <li>CGPA: 3.53</li>
+          <li>Major work: Mathematics, Statistics, Data Mining, Information Systems, Project Management, Software Engineering</li>
+          <li>Theoretical and practical knowledge of programming, electronics and electricals</li>
+        </ul>
+      </div>
+
+      <div class="edu">
+        <h3>+2 Level</h3>
+        <p>Gaindakot Namuna Science College (2017)</p>
+        <ul>
+          <li>Percentage: 72%</li>
+          <li>Mathematics major</li>
+        </ul>
+      </div>
+
+      <div class="edu">
+        <h3>SLC</h3>
+        <p>Bhimsen Adarsha Secondary School (2014)</p>
+        <ul>
+          <li>Percentage: 86.75%</li>
+          <li>Mathematics as optional subject</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="interests" class="card">
+      <h2>Interests</h2>
+      <p>Travel, sports, soccer, music, and experiencing new things.</p>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:ashokbhattarai53@gmail.com">ashokbhattarai53@gmail.com</a></p>
+      <p>Phone: <a href="tel:+9779866856705">9866856705</a></p>
+      <p>Address: 9 Lalitpur, Kusunti</p>
+      <p>
+        Download resume: <a href="#" class="btn disabled" aria-disabled="true">Resume (add file to repo)</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© ASHOK BHATTARAI — Computer Engineer</p>
+    </div>
+  </footer>
+
+  <script>
+    // small script to mark resume link disabled if not provided
+    document.addEventListener('DOMContentLoaded', () => {
+      const btn = document.querySelector('.btn.disabled');
+      if (btn) {
+        btn.addEventListener('click', (e) => {
+          e.preventDefault();
+          alert('Add your resume file (e.g., resume.pdf) to the repo and update the link in index.html.');
+        });
+      }
+    });
+  </script>
+</body>
+</html>
